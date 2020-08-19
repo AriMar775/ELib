@@ -141,6 +141,7 @@ export const SearchInput = styled.input(() => ({
 
 export const NotificationWrapper = styled.div(() => ({
   margin: "auto 0 auto 20px",
+  cursor: "pointer",
 }));
 
 export const OuterCircle = styled.div(() => ({

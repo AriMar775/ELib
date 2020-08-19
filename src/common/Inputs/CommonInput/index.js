@@ -17,9 +17,9 @@ const Input = ({ isNotTextArea, type, label, placeholder, width, input }) => {
         type === "select" ? (
           <>
             <Select type={type} {...input}>
-              <Option value="small">Мелкий</Option>
-              <Option value="medium">Средний</Option>
-              <Option value="large">Крупный</Option>
+              <Option value="Мелкий">Мелкий</Option>
+              <Option value="Средний">Средний</Option>
+              <Option value="Крупный">Крупный</Option>
             </Select>
           </>
         ) : (

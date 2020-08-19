@@ -7,6 +7,7 @@ import Book from "../pages/Book/Container";
 import AddBook from "../pages/AddBook/Container";
 import SelectSeriesModal from "../common/Modals/SelectSeriesModal/Container";
 import SelectCollectionModal from "../common/Modals/SelectCollectionModal/Container";
+import SeriesItemsModal from "../common/Modals/SeriesItemsModal/Container";
 
 const Routes = () => {
   let location = useLocation();
@@ -27,6 +28,7 @@ const Routes = () => {
             path="/select-collections-modal"
             component={SelectCollectionModal}
           />
+          <Route path="/series-items-modal" component={SeriesItemsModal} />
         </>
       )}
     </>

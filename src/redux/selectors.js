@@ -1,8 +1,15 @@
 import { formValueSelector } from "redux-form";
 
+export const getBooks = (state) => state.books.books;
+
 export const getSeries = (state) => state.series.series;
 
 export const getCollections = (state) => state.collections.collections;
+
+export const getFormCover = (state) => {
+  const formValues = formValueSelector("AddBookForm");
+  return formValues(state, "cover");
+};
 
 export const getFormSeries = (state) => {
   const formValues = formValueSelector("AddBookForm");
@@ -12,11 +19,6 @@ export const getFormSeries = (state) => {
 export const getFormCollection = (state) => {
   const formValues = formValueSelector("AddBookForm");
   return formValues(state, "collection");
-};
-
-export const getFormCover = (state) => {
-  const formValues = formValueSelector("AddBookForm");
-  return formValues(state, "cover");
 };
 
 export const getFormCategory = (state) => {
