@@ -2,13 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Nav from "../../../common/Nav/Container";
-import Card from "../../../common/Card";
+import CoverCard from "../../../common/CoverCard/Container";
 import {
   HWrapper,
   VWrapper,
-  CardWrapper,
-  ImageWrapper,
-  SeriesWrapper,
   Title,
   BlueTitle,
   SubTitle,
@@ -22,12 +19,6 @@ import {
   BtnBg,
   EditIcon,
   DeleteIcon,
-  ReadWrapper,
-  PercentReadWrapper,
-  PagesReadWrapper,
-  NumberWrapper,
-  EditNumberIcon,
-  BlueBtnWrapper,
 } from "./styles";
 
 export const Book = ({
@@ -63,45 +54,14 @@ export const Book = ({
       </BtnWrapper>
       <HWrapper>
         {cover && (
-          <CardWrapper>
-            <Card width="238px" minHeight="312px">
-              <Link
-                to={{
-                  pathname: "/series-items-modal",
-                  state: { background: location },
-                }}
-                style={{ textDecoration: "none" }}
-              >
-                {series && <SeriesWrapper>{series} (N/N)</SeriesWrapper>}
-              </Link>
-              <ImageWrapper src={cover} />
-              {category === "Читаю" && (
-                <ReadWrapper>
-                  <NumberWrapper>
-                    {progressPercent && (
-                      <PercentReadWrapper>
-                        {progressPercent} %
-                      </PercentReadWrapper>
-                    )}
-                    {progressPages && (
-                      <PagesReadWrapper>
-                        {progressPages} / 1152 стр.
-                      </PagesReadWrapper>
-                    )}
-                  </NumberWrapper>
-                  <EditNumberIcon />
-                </ReadWrapper>
-              )}
-              {category === "Жду выхода" && releaseDate && (
-                <PagesReadWrapper>{releaseDate}</PagesReadWrapper>
-              )}
-              {category === "Буду читать" && (
-                <BlueBtnWrapper onClick={onBlueBtnClick}>
-                  Начать читать
-                </BlueBtnWrapper>
-              )}
-            </Card>
-          </CardWrapper>
+          <CoverCard
+            category={category}
+            series={series}
+            cover={cover}
+            progressPercent={progressPercent}
+            progressPages={progressPages}
+            releaseDate={releaseDate}
+          />
         )}
 
         <VWrapper>

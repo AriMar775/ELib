@@ -1,5 +1,7 @@
 import { formValueSelector } from "redux-form";
 
+export const getBook = (state) => state.book.book;
+
 export const getBooks = (state) => state.books.books;
 
 export const getSeries = (state) => state.series.series;

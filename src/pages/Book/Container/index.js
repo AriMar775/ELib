@@ -5,13 +5,13 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 import { Book } from "../Component";
-import { getBooks } from "../../../redux/selectors";
+import { getBook } from "../../../redux/selectors";
 
 const BookContainer = () => {
   moment.locale("ru");
   let location = useLocation();
 
-  const book = useSelector(getBooks)[0];
+  const book = useSelector(getBook);
 
   const handleBlueBtnClick = () => {};
 

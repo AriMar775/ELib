@@ -57,7 +57,7 @@ const Nav = (props) => {
                 <Text>Буду читать</Text>
               </MenuItem>
             </Link>
-            <Link to="/waiting" style={{ textDecoration: "none" }}>
+            <Link to="/waiting-for-release" style={{ textDecoration: "none" }}>
               <MenuItem>
                 <WaitingIcon />
                 <Text>Жду выхода</Text>
