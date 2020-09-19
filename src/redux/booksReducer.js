@@ -24,6 +24,8 @@ const initialState = {
       releaseDate: "2020-08-10",
       progressPercent: "24",
       progressPages: "121",
+
+      collection: "Разное",
       series: "Длинное название серии",
       category: "Читаю",
     },
@@ -42,6 +44,8 @@ const initialState = {
       releaseDate: "2020-08-10",
       progressPercent: "24",
       progressPages: "121",
+
+      collection: "Классика",
       series: "Длинное название серии",
       category: "Читаю",
     },
@@ -51,6 +55,8 @@ const initialState = {
       releaseDate: "2020-08-10",
       progressPercent: "24",
       progressPages: "121",
+
+      collection: "Разное",
       series: "Длинное название серии",
       category: "Читаю",
     },

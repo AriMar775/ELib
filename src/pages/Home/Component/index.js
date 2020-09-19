@@ -17,7 +17,7 @@ const Home = ({ books }) => {
     <Nav>
       <ContentWrapper>
         <Link
-          to="/was-read"
+          to="/reading"
           style={{ textDecoration: "none", maxWidth: "fit-content" }}
         >
           <Header>Читаю</Header>
@@ -44,7 +44,7 @@ const Home = ({ books }) => {
             )}
         </ListWrapper>
         <Link
-          to="/reading"
+          to="/will-read"
           style={{ textDecoration: "none", maxWidth: "fit-content" }}
         >
           <Header>Буду читать</Header>
@@ -71,7 +71,7 @@ const Home = ({ books }) => {
             )}
         </ListWrapper>
         <Link
-          to="/will-read"
+          to="/waiting-for-release"
           style={{ textDecoration: "none", maxWidth: "fit-content" }}
         >
           <Header>Жду выхода</Header>
@@ -98,7 +98,7 @@ const Home = ({ books }) => {
             )}
         </ListWrapper>
         <Link
-          to="/waiting-for-release"
+          to="/was-read"
           style={{ textDecoration: "none", maxWidth: "fit-content" }}
         >
           <Header>Прочитано</Header>
