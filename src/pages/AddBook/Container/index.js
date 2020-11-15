@@ -3,7 +3,7 @@ import { change } from "redux-form";
 import { useLocation, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import AddBook from "../Component";
+import AddBook from "../component";
 import { addBook, addSeries, addCollection } from "../../../redux/actions";
 import {
   getFormSeries,

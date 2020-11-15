@@ -1,4 +1,4 @@
-import { ADD_COLLECTION } from "./types";
+import { ADD_COLLECTION } from "../types";
 
 const initialState = {
   collections: ["Классика", "Стивен Кинг", "Разное"],

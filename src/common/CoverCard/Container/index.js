@@ -3,7 +3,7 @@ import moment from "moment";
 import "moment/locale/ru";
 import { useLocation } from "react-router-dom";
 
-import { CoverCard } from "../Component";
+import { CoverCard } from "../component";
 
 const CoverCardContainer = ({
   series,

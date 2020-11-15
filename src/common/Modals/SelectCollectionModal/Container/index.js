@@ -3,7 +3,7 @@ import { change } from "redux-form";
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import { SelectCollectionModal } from "../Component";
+import { SelectCollectionModal } from "../component";
 import { getCollections } from "../../../../redux/selectors";
 
 const SelectCollectionModalContainer = () => {

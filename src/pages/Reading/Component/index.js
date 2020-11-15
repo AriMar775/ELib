@@ -1,7 +1,7 @@
 import React from "react";
 
-import Nav from "../../../common/Nav/Container";
-import CoverCard from "../../../common/CoverCard/Container";
+import Nav from "../../../common/Nav/container";
+import CoverCard from "../../../common/CoverCard/container";
 import {
   ContentWrapper,
   CardWrapper,
@@ -22,7 +22,7 @@ const Reading = ({ books, collections }) => {
               (book) =>
                 book.category === "Читаю" &&
                 book.collection === undefined && (
-                  <CardWrapper>
+                  <CardWrapper key={book.name}>
                     <CoverCard
                       series={book.series}
                       category={book.category}
@@ -30,7 +30,6 @@ const Reading = ({ books, collections }) => {
                       progressPercent={book.progressPercent}
                       progressPages={book.progressPages}
                       releaseDate={book.releaseDate}
-                      key={book.name}
                     />
                     <NameWrapper>{book.name}</NameWrapper>
                     <AuthorWrapper>{book.author}</AuthorWrapper>
@@ -40,7 +39,9 @@ const Reading = ({ books, collections }) => {
         </ListWrapper>
 
         {collections &&
-          collections.map((collection) => <Header>{collection}</Header>)}
+          collections.map((collection) => (
+            <Header key={collection}>{collection}</Header>
+          ))}
       </ContentWrapper>
     </Nav>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import { SeriesItemsModal } from "../Component";
+import { SeriesItemsModal } from "../component";
 import { getSeries } from "../../../../redux/selectors";
 
 const SeriesItemsModalContainer = () => {

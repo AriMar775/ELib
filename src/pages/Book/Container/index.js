@@ -4,7 +4,7 @@ import "moment/locale/ru";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
-import { Book } from "../Component";
+import { Book } from "../component";
 import { getBook } from "../../../redux/selectors";
 
 const BookContainer = () => {
@@ -34,7 +34,7 @@ const BookContainer = () => {
       comment={book.comment}
       progressPercent={book.progressPercent}
       progressPages={book.progressPages}
-      onBlueBtnClic={handleBlueBtnClick}
+      onBlueBtnClick={handleBlueBtnClick}
     />
   );
 };

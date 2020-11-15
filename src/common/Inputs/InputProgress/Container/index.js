@@ -1,6 +1,6 @@
 import React from "react";
 
-import { InputProgress } from "../Component";
+import { InputProgress } from "../component";
 
 const InputProgressContainer = ({ label, placeholder, width, input }) => {
   return (

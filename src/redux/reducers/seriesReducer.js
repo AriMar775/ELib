@@ -1,4 +1,4 @@
-import { ADD_SERIES } from "./types";
+import { ADD_SERIES } from "../types";
 
 const initialState = {
   series: ["Королевская кровь", "Ведьмак", "Неночь"],

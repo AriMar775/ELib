@@ -2,11 +2,11 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
 
-import Nav from "../../../common/Nav/Container";
+import Nav from "../../../common/Nav/container";
 import Input from "../../../common/Inputs/CommonInput";
-import InputFile from "../../../common/Inputs/InputFile/Container";
-import InputProgress from "../../../common/Inputs/InputProgress/Container";
-import Radio from "../../../common/Inputs/Radio/Container";
+import InputFile from "../../../common/Inputs/InputFile/container";
+import InputProgress from "../../../common/Inputs/InputProgress/container";
+import Radio from "../../../common/Inputs/Radio/container";
 import BlueBtn from "../../../common/Buttons/BlueBtn";
 import FlatBtn from "../../../common/Buttons/FlatBtn";
 import WhiteBtn from "../../../common/Buttons/WhiteBtn";

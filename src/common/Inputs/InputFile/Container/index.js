@@ -1,6 +1,6 @@
 import React from "react";
 
-import { InputFile } from "../Component";
+import { InputFile } from "../component";
 
 const InputFileContainer = ({ input, srcValue }) => {
   const toBase64 = (file) =>

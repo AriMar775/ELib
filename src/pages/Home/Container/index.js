@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import Home from "../Component";
+import Home from "../component";
 import { getBooks } from "../../../redux/selectors";
 
 const HomeContainer = () => {

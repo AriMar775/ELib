@@ -1,4 +1,4 @@
-import { ADD_BOOK } from "./types";
+import { ADD_BOOK } from "../types";
 
 const initialState = {
   book: {

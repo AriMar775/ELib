@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Nav from "../../../common/Nav/Container";
-import CoverCard from "../../../common/CoverCard/Container";
+import Nav from "../../../common/Nav/container";
+import CoverCard from "../../../common/CoverCard/container";
 import {
   HWrapper,
   VWrapper,

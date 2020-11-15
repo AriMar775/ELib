@@ -2,16 +2,16 @@ import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 
 import NotFound from "../pages/NotFound";
-import Home from "../pages/Home/Container";
-import Book from "../pages/Book/Container";
-import AddBook from "../pages/AddBook/Container";
-import SelectSeriesModal from "../common/Modals/SelectSeriesModal/Container";
-import SelectCollectionModal from "../common/Modals/SelectCollectionModal/Container";
-import SeriesItemsModal from "../common/Modals/SeriesItemsModal/Container";
-import WasRead from "../pages/WasRead/Container";
-import Reading from "../pages/Reading/Container";
-import WillRead from "../pages/WillRead/Container";
-import WaitingForRelease from "../pages/WaitingForRelease/Container";
+import Home from "../pages/Home/container";
+import Book from "../pages/Book/container";
+import AddBook from "../pages/AddBook/container";
+import SelectSeriesModal from "../common/Modals/SelectSeriesModal/container";
+import SelectCollectionModal from "../common/Modals/SelectCollectionModal/container";
+import SeriesItemsModal from "../common/Modals/SeriesItemsModal/container";
+import WasRead from "../pages/WasRead/container";
+import Reading from "../pages/Reading/container";
+import WillRead from "../pages/WillRead/container";
+import WaitingForRelease from "../pages/WaitingForRelease/container";
 
 const Routes = () => {
   let location = useLocation();

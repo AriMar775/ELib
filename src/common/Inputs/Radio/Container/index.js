@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Radio } from "../Component";
+import { Radio } from "../component";
 
 const RadioContainer = ({ marginLeft, input, values }) => {
   const onChange = (value) => {

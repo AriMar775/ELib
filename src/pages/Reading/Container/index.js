@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import Reading from "../Component";
+import Reading from "../component";
 import { getBooks, getCollections } from "../../../redux/selectors";
 
 const ReadingContainer = () => {
