@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import Card from "../../Card";
@@ -15,7 +16,7 @@ import {
   BlueBtnWrapper,
 } from "./styles";
 
-export const CoverCard = ({
+const CoverCard = ({
   location,
   series,
   category,
@@ -62,4 +63,17 @@ export const CoverCard = ({
       </Card>
     </CardWrapper>
   );
+};
+
+export default CoverCard;
+
+CoverCard.propTypes = {
+  location: PropTypes.string,
+  series: PropTypes.arrayOf(PropTypes.string),
+  category: PropTypes.string,
+  cover: PropTypes.string,
+  progressPercent: PropTypes.string,
+  progressPages: PropTypes.string,
+  releaseDate: PropTypes.string,
+  onBlueBtnClick: PropTypes.func,
 };

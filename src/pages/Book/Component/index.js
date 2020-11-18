@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import Nav from "../../../common/Nav/container";
@@ -21,7 +22,7 @@ import {
   DeleteIcon,
 } from "./styles";
 
-export const Book = ({
+const Book = ({
   category,
   cover,
   name,
@@ -148,4 +149,27 @@ export const Book = ({
       </HWrapper>
     </Nav>
   );
+};
+
+export default Book;
+
+Book.propTypes = {
+  category: PropTypes.string,
+  cover: PropTypes.string,
+  name: PropTypes.string,
+  author: PropTypes.string,
+  releaseDate: PropTypes.string,
+  finishDate: PropTypes.string,
+  bookSize: PropTypes.string,
+  textSize: PropTypes.string,
+  series: PropTypes.string,
+  collection: PropTypes.string,
+  annotation: PropTypes.string,
+  advantages: PropTypes.string,
+  disadvantages: PropTypes.string,
+  comment: PropTypes.string,
+  location: PropTypes.string,
+  progressPercent: PropTypes.string,
+  progressPages: PropTypes.string,
+  onBlueBtnClick: PropTypes.func,
 };

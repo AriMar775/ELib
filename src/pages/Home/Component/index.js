@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import Nav from "../../../common/Nav/container";
 import CoverCard from "../../../common/CoverCard/container";
@@ -126,3 +127,17 @@ const Home = ({ books }) => {
 };
 
 export default Home;
+
+Home.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      author: PropTypes.string,
+      releaseDate: PropTypes.string,
+      progressPercent: PropTypes.string,
+      progressPages: PropTypes.string,
+      series: PropTypes.string,
+      category: PropTypes.string,
+    })
+  ),
+};

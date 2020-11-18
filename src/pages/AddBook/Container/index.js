@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { change } from "redux-form";
 import { useLocation, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -47,12 +47,15 @@ const AddBookContainer = () => {
     }
   }, [categoryValue, dispatch]);
 
-  const handleSubmit = (values) => {
-    dispatch(addBook(values));
-    if (values.series != null) dispatch(addSeries(values.series));
-    if (values.collection != null) dispatch(addCollection(values.collection));
-    history.push(`/book/`);
-  };
+  const handleSubmit = useCallback(
+    (values) => {
+      dispatch(addBook(values));
+      if (values.series != null) dispatch(addSeries(values.series));
+      if (values.collection != null) dispatch(addCollection(values.collection));
+      history.push(`/book/`);
+    },
+    [dispatch, history]
+  );
 
   const back = (e) => {
     e.stopPropagation();

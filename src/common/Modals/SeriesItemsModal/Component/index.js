@@ -1,8 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { ModalBgWrapper, ModalWrapper, Header } from "./styles";
 
-export const SeriesItemsModal = ({ back, series, ...props }) => {
+const SeriesItemsModal = ({ back, series, ...props }) => {
   return (
     <ModalBgWrapper onClick={back}>
       <ModalWrapper>
@@ -12,3 +13,9 @@ export const SeriesItemsModal = ({ back, series, ...props }) => {
     </ModalBgWrapper>
   );
 };
+
+SeriesItemsModal.propTypes = {
+  back: PropTypes.func,
+  series: PropTypes.arrayOf(PropTypes.string),
+};
+export default SeriesItemsModal;

@@ -12,7 +12,6 @@ export const Label = styled.label(() => ({
 }));
 
 export const InputItem = styled.input((props) => ({
-  background: "transparent",
   marginRight: "20px",
   marginBottom: "20px",
   padding: "0 0 0 5px",
@@ -21,6 +20,7 @@ export const InputItem = styled.input((props) => ({
   fontSize: "16px",
   lineHeight: "19px",
   color: "#2F2F48",
+  background: "transparent",
   border: "none",
   borderBottom: "1px solid #2F2F48",
 

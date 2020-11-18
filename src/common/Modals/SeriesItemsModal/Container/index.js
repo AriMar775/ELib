@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import { SeriesItemsModal } from "../component";
+import SeriesItemsModal from "../component";
 import { getSeries } from "../../../../redux/selectors";
 
 const SeriesItemsModalContainer = () => {
@@ -10,10 +10,13 @@ const SeriesItemsModalContainer = () => {
 
   const series = useSelector(getSeries);
 
-  const back = (e) => {
-    e.stopPropagation();
-    history.goBack();
-  };
+  const back = useCallback(
+    (e) => {
+      e.stopPropagation();
+      history.goBack();
+    },
+    [history]
+  );
 
   return <SeriesItemsModal back={back} series={series} />;
 };

@@ -16,18 +16,21 @@ export const ListWrapper = styled.div(() => ({
 }));
 
 export const Header = styled.span(() => ({
-  display: "flex",
   marginBottom: "10px",
+  display: "flex",
   fontFamily: "Montserrat",
   fontWeight: "600",
   fontSize: "36px",
   lineHeight: "44px",
   color: "#2F2F48",
+  "&:hover": {
+    color: "#90BAF9",
+  },
 }));
 
 export const NameWrapper = styled.span(() => ({
-  display: "flex",
   margin: "-10px auto 5px 10px",
+  display: "flex",
   fontFamily: "Roboto",
   fontWeight: "500",
   fontSize: "18px",
@@ -36,10 +39,9 @@ export const NameWrapper = styled.span(() => ({
 }));
 
 export const AuthorWrapper = styled.span(() => ({
-  display: "flex",
   marginLeft: "10px",
   marginBottom: "10px",
-
+  display: "flex",
   fontFamily: "Roboto",
   fontSize: "13px",
   lineHeight: "15px",

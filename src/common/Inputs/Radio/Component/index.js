@@ -1,8 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { RadioWrapper, FlatBtnWrapper } from "./styles.js";
 
-export const Radio = ({ marginLeft, active, onChange, values }) => {
+const Radio = ({ marginLeft, active, onChange, values }) => {
   return (
     <RadioWrapper>
       {values.map((item) => (
@@ -17,4 +18,13 @@ export const Radio = ({ marginLeft, active, onChange, values }) => {
       ))}
     </RadioWrapper>
   );
+};
+
+export default Radio;
+
+Radio.propTypes = {
+  marginLeft: PropTypes.string,
+  active: PropTypes.string,
+  onChange: PropTypes.func,
+  values: PropTypes.arrayOf(PropTypes.string),
 };

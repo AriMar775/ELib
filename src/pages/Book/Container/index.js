@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useCallback } from "react";
 import moment from "moment";
 import "moment/locale/ru";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
-import { Book } from "../component";
+import Book from "../component";
 import { getBook } from "../../../redux/selectors";
 
 const BookContainer = () => {
@@ -13,7 +13,7 @@ const BookContainer = () => {
 
   const book = useSelector(getBook);
 
-  const handleBlueBtnClick = () => {};
+  const handleBlueBtnClick = useCallback(() => {}, []);
 
   return (
     <Book

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import {
   ModalBgWrapper,
@@ -8,7 +9,7 @@ import {
   SeriesItem,
 } from "./styles";
 
-export const SelectSeriesModal = ({
+const SelectSeriesModal = ({
   back,
   series,
   handleSeriesClick,
@@ -30,4 +31,13 @@ export const SelectSeriesModal = ({
       ;
     </ModalBgWrapper>
   );
+};
+
+export default SelectSeriesModal;
+
+SelectSeriesModal.propTypes = {
+  back: PropTypes.func,
+  series: PropTypes.arrayOf(PropTypes.string),
+  handleSeriesClick: PropTypes.func,
+  handleClick: PropTypes.func,
 };

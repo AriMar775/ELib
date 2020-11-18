@@ -3,26 +3,26 @@ import styled from "styled-components";
 import logo from "../../assets/logo-medium.png";
 
 export const NotFoundWrapper = styled.div(() => ({
+  margin: "0 auto",
+  height: "inherit",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   textAlign: "-webkit-center",
-  height: "inherit",
   background: "#E7EDFF",
-  margin: "0 auto",
 }));
 
 export const LogoWrapper = styled.div(() => ({
-  background: `url(${logo})`,
+  margin: "50px auto 30px auto",
   width: "196.36px",
   height: "79.49px",
-  margin: "50px auto 30px auto",
+  background: `url(${logo})`,
 }));
 
 export const TextWrapper = styled.div(() => ({
+  marginBottom: "30px",
   display: "flex",
   justifyContent: "center",
-  marginBottom: "30px",
   fontFamily: "Montserrat",
   fontWeight: "bold",
   fontSize: "24px",

@@ -4,10 +4,10 @@ import editNumbers from "../../../assets/icons/edit-numbers.png";
 
 export const CardWrapper = styled.div(() => ({
   position: "relative",
-  display: "flex",
-  textAlign: "-webkit-center",
   marginRight: "20px",
   marginBottom: "20px",
+  display: "flex",
+  textAlign: "-webkit-center",
 }));
 
 export const ImageWrapper = styled.img(() => ({
@@ -18,11 +18,10 @@ export const ImageWrapper = styled.img(() => ({
 
 export const SeriesWrapper = styled.div(() => ({
   position: "absolute",
-  padding: "5px",
   marginTop: "255px",
   marginLeft: "10px",
+  padding: "5px",
   width: "208px",
-  background: "rgba(144, 186, 249, 0.7)",
   fontFamily: "Roboto",
   fontWeight: "bold",
   fontSize: "16px",
@@ -30,13 +29,14 @@ export const SeriesWrapper = styled.div(() => ({
   alignItems: "center",
   textAlign: "center",
   color: "#FFFFFF;",
+  background: "rgba(144, 186, 249, 0.7)",
 }));
 
 export const ReadWrapper = styled.div(() => ({
   marginTop: "5px",
+  padding: "0 10px 0 10px",
   display: "flex",
   justifyContent: "space-between",
-  padding: "0 10px 0 10px",
 }));
 
 export const PercentReadWrapper = styled.div(() => ({
@@ -68,12 +68,12 @@ export const EditNumberIcon = styled.div(() => ({
 }));
 
 export const BlueBtnWrapper = styled.div(() => ({
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
   margin: "5px 0 10px 0",
   width: "218px",
   height: "30px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   background: "#90BAF9",
   boxShadow:
     "2px 2px 5px rgba(90, 105, 158, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(12, 22, 105, 0.1), inset 2px 2px 2px rgba(255, 255, 255, 0.25)",

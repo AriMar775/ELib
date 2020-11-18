@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { change } from "redux-form";
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import { SelectSeriesModal } from "../component";
+import SelectSeriesModal from "../component";
 import { getSeries } from "../../../../redux/selectors";
 
 const SelectSeriesModalContainer = () => {
@@ -12,14 +12,20 @@ const SelectSeriesModalContainer = () => {
 
   const series = useSelector(getSeries);
 
-  const back = (e) => {
-    e.stopPropagation();
-    history.goBack();
-  };
+  const back = useCallback(
+    (e) => {
+      e.stopPropagation();
+      history.goBack();
+    },
+    [history]
+  );
 
-  const handleSeriesClick = (value) => {
-    dispatch(change("AddBookForm", "series", value));
-  };
+  const handleSeriesClick = useCallback(
+    (value) => {
+      dispatch(change("AddBookForm", "series", value));
+    },
+    [dispatch]
+  );
 
   return (
     <SelectSeriesModal

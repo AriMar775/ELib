@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
 
@@ -301,3 +302,21 @@ export default reduxForm({
     textSize: "small",
   },
 })(AddBook);
+
+AddBook.propTypes = {
+  handleSubmit: PropTypes.func,
+  handleAddSeriesBtn: PropTypes.func,
+  handleAddCollectionBtn: PropTypes.func,
+  handleToggle: PropTypes.func,
+  isShowSeries: PropTypes.bool,
+  isShowCollection: PropTypes.bool,
+  location: PropTypes.string,
+  coverValue: PropTypes.string,
+  seriesValue: PropTypes.string,
+  collectionValue: PropTypes.string,
+  isShowFinishDate: PropTypes.bool,
+  isShowProgress: PropTypes.bool,
+  isProgressInPercent: PropTypes.bool,
+  progressName: PropTypes.string,
+  back: PropTypes.func,
+};

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Nav from "../../../common/Nav/container";
 import CoverCard from "../../../common/CoverCard/container";
@@ -42,3 +43,17 @@ const WaitingForRelease = ({ books }) => {
 };
 
 export default WaitingForRelease;
+
+WaitingForRelease.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      author: PropTypes.string,
+      releaseDate: PropTypes.string,
+      progressPercent: PropTypes.string,
+      progressPages: PropTypes.string,
+      series: PropTypes.string,
+      category: PropTypes.string,
+    })
+  ),
+};

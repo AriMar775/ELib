@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-import { InputFile } from "../component";
+import InputFile from "../component";
 
 const InputFileContainer = ({ input, srcValue }) => {
   const toBase64 = (file) =>
@@ -19,3 +20,8 @@ const InputFileContainer = ({ input, srcValue }) => {
 };
 
 export default InputFileContainer;
+
+InputFileContainer.propTypes = {
+  input: PropTypes.string,
+  srcValue: PropTypes.string,
+};

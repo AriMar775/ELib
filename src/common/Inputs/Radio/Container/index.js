@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useCallback } from "react";
+import PropTypes from "prop-types";
 
-import { Radio } from "../component";
+import Radio from "../component";
 
 const RadioContainer = ({ marginLeft, input, values }) => {
-  const onChange = (value) => {
-    input.onChange(value);
-  };
+  const onChange = useCallback(
+    (value) => {
+      input.onChange(value);
+    },
+    [input]
+  );
 
   return (
     <Radio
@@ -18,3 +22,9 @@ const RadioContainer = ({ marginLeft, input, values }) => {
 };
 
 export default RadioContainer;
+
+RadioContainer.propTypes = {
+  marginLeft: PropTypes.string,
+  input: PropTypes.string,
+  values: PropTypes.arrayOf(PropTypes.string),
+};

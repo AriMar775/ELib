@@ -11,28 +11,28 @@ import search from "../../../assets/icons/search.png";
 import notification from "../../../assets/icons/notification.png";
 
 export const NavWrapper = styled.div(() => ({
+  height: "inherit",
   display: "grid",
   gridTemplateAreas: "'menu header' 'menu content'",
   gridTemplateColumns: "240px 1fr",
   gridTemplateRows: "70px 1fr",
-  height: "inherit",
-  background: "#E7EDFF",
   fontFamily: "Roboto",
+  background: "#E7EDFF",
 }));
 
 export const Menu = styled.div(() => ({
+  height: "inherit",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  height: "inherit",
   gridArea: "menu",
 }));
 
 export const Logo = styled.div(() => ({
-  background: `url(${logo})`,
+  margin: "22px auto 50px auto",
   width: "99px",
   height: "40px",
-  margin: "22px auto 50px auto",
+  background: `url(${logo})`,
   cursor: "pointer",
 }));
 
@@ -41,9 +41,9 @@ export const LogoAndMenuWrapper = styled.div(() => ({}));
 export const MenuItems = styled.div(() => ({}));
 
 export const Label = styled.span(() => ({
-  display: "flex",
   marginTop: "30px",
   marginLeft: "20px",
+  display: "flex",
   fontSize: "13px",
   lineHeight: "15px",
   color: "#9AA3C2",
@@ -58,43 +58,43 @@ export const MenuItem = styled.div(() => ({
 
 export const WasReadIcon = styled.div(() => ({
   marginLeft: "3px",
-  background: `url(${wasRead})`,
   width: "15px",
   height: "12px",
+  background: `url(${wasRead})`,
 }));
 
 export const ReadingIcon = styled.div(() => ({
   marginLeft: "1px",
-  background: `url(${reading})`,
   width: "17px",
   height: "16px",
+  background: `url(${reading})`,
 }));
 
 export const WillReadIcon = styled.div(() => ({
   marginLeft: "0",
-  background: `url(${willRead})`,
   width: "18px",
   height: "18px",
+  background: `url(${willRead})`,
 }));
 
 export const WaitingIcon = styled.div(() => ({
   marginLeft: "3px",
-  background: `url(${waiting})`,
   width: "14px",
   height: "11px",
+  background: `url(${waiting})`,
   backgroundRepeat: "no-repeat",
 }));
 
 export const CollectionsIcon = styled.div(() => ({
-  background: `url(${collections})`,
   width: "17px",
   height: "17px",
+  background: `url(${collections})`,
 }));
 
 export const StatsIcon = styled.div(() => ({
-  background: `url(${stats})`,
   width: "17px",
   height: "17px",
+  background: `url(${stats})`,
 }));
 
 export const Text = styled.span(() => ({
@@ -109,19 +109,18 @@ export const Text = styled.span(() => ({
 }));
 
 export const BtnWrapper = styled.div(() => ({
+  marginBottom: "20px",
   display: "flex",
   justifyContent: "center",
-  marginBottom: "20px",
 }));
 
 export const Header = styled.div(() => ({
-  gridArea: "header",
   marginTop: "20px",
   display: "flex",
+  gridArea: "header",
 }));
 
 export const SearchInput = styled.input(() => ({
-  background: `url(${search}) no-repeat scroll 0 18px`,
   paddingLeft: "20px",
   width: "100%",
   fontFamily: "Roboto",
@@ -129,6 +128,7 @@ export const SearchInput = styled.input(() => ({
   lineHeight: "19px",
   color: "#9AA3C2",
   border: "none",
+  background: `url(${search}) no-repeat scroll 0 18px`,
 
   ":focus": {
     outline: "none",
@@ -145,12 +145,12 @@ export const NotificationWrapper = styled.div(() => ({
 }));
 
 export const OuterCircle = styled.div(() => ({
+  width: "40px",
+  height: "41px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   borderRadius: "34px",
-  width: "40px",
-  height: "41px",
   background: "#E7EDFF",
   boxShadow:
     "-4px -4px 5px rgba(255, 255, 255, 0.9), 2px 2px 8px rgba(90, 105, 158, 0.5)",
@@ -175,16 +175,16 @@ export const InnerCircle = styled.div(() => ({
 }));
 
 export const NotificationIcon = styled.div(() => ({
+  width: "20px",
+  height: "21px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  background: `url(${notification})`,
-  width: "20px",
-  height: "21px",
   fontWeight: "bold",
   fontSize: "12px",
   lineHeight: "14px",
   color: "#90BAF9",
+  background: `url(${notification})`,
 }));
 
 export const WhiteBtnWrapper = styled.div(() => ({

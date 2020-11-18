@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { FlatBtnWrapper } from "./styles.js";
 
@@ -11,3 +12,9 @@ const FlatBtn = ({ width, children, onClick }) => {
 };
 
 export default FlatBtn;
+
+FlatBtn.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  onClick: PropTypes.func,
+};

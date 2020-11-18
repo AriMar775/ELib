@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { WhiteBtnWrapper } from "./styles.js";
 
@@ -11,3 +12,9 @@ const WhiteBtn = ({ width, height, onClick, children }) => {
 };
 
 export default WhiteBtn;
+
+WhiteBtn.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  onClick: PropTypes.func,
+};

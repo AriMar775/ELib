@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
 export const ModalBgWrapper = styled.div(() => ({
-  position: "absolute",
   top: 0,
   left: 0,
   bottom: 0,
   right: 0,
+  position: "absolute",
   background: "rgba(177, 194, 237, 0.3)",
   overflow: "hidden",
 }));
 
 export const ModalWrapper = styled.div(() => ({
+  position: "fixed",
+  top: "50%",
+  left: "50%",
+  padding: "30px",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  position: "fixed",
-  padding: "30px",
-  top: "50%",
-  left: "50%",
   transform: "translate(-50%, -50%)",
 
   background: "#E7EDFF",

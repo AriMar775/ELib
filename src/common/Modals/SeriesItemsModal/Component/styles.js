@@ -11,15 +11,14 @@ export const ModalBgWrapper = styled.div(() => ({
 }));
 
 export const ModalWrapper = styled.div(() => ({
+  top: "50%",
+  left: "50%",
+  padding: "30px",
+  position: "fixed",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  position: "fixed",
-  padding: "30px",
-  top: "50%",
-  left: "50%",
   transform: "translate(-50%, -50%)",
-
   background: "#E7EDFF",
   boxShadow:
     "2px 2px 5px rgba(90, 105, 158, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.2)",

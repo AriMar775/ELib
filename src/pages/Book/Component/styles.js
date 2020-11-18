@@ -15,15 +15,15 @@ export const VWrapper = styled.div(() => ({
 }));
 
 export const CommentWrapper = styled.div(() => ({
+  maxWidth: "435px",
   display: "flex",
   flexDirection: "column",
-  maxWidth: "435px",
 }));
 
 export const AdvWrapper = styled.div(() => ({
-  display: "flex",
-  maxWidth: "435px",
   marginRight: "20px",
+  maxWidth: "435px",
+  display: "flex",
 }));
 
 export const Title = styled.span(() => ({
@@ -37,8 +37,8 @@ export const Title = styled.span(() => ({
 }));
 
 export const BlueTitle = styled.span(() => ({
-  display: "flex",
   marginBottom: "10px",
+  display: "flex",
   fontFamily: "Roboto",
   fontWeight: "500",
   fontSize: "24px",
@@ -47,8 +47,8 @@ export const BlueTitle = styled.span(() => ({
 }));
 
 export const SubTitle = styled.span(() => ({
-  marginBottom: "10px",
   marginRight: "5px",
+  marginBottom: "10px",
   fontFamily: "Roboto",
   fontWeight: "500",
   fontSize: "14px",
@@ -74,26 +74,26 @@ export const Text = styled.span(() => ({
 
 export const PlusWrapper = styled.div(() => ({
   marginTop: "4px",
+  marginRight: "20px",
   minWidth: "20px",
   height: "20px",
-  marginRight: "20px",
   background: `url(${plus})`,
 }));
 
 export const MinusWrapper = styled.div(() => ({
-  minWidth: "20px",
-  height: "20px",
   marginTop: "12px",
   marginRight: "20px",
+  minWidth: "20px",
+  height: "20px",
   background: `url(${minus})`,
   backgroundRepeat: "no-repeat",
 }));
 
 export const BtnWrapper = styled.div(() => ({
+  marginBottom: "-30px",
+  maxWidth: "949px",
   display: "flex",
   justifyContent: "flex-end",
-  maxWidth: "949px",
-  marginBottom: "-30px",
 }));
 
 export const BtnBg = styled.div(() => ({

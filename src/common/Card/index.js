@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { CardWrapper } from "./styles";
 
@@ -11,3 +12,9 @@ const Card = ({ width, height, minHeight, children }) => {
 };
 
 export default Card;
+
+Card.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  minHeight: PropTypes.string,
+};

@@ -14,9 +14,9 @@ export const VWrapper = styled.div((props) => ({
 }));
 
 export const Mark = styled.span(() => ({
-  position: "relative",
   marginTop: "-50px",
   marginLeft: "70px",
+  position: "relative",
   fontSize: "14px",
   lineHeight: "16px",
   color: "#9AA3C2",
@@ -80,8 +80,8 @@ export const HiddenProgressPagesFieldWrapper = styled.div((props) => ({
   display: !props.isProgressInPercent ? "flex" : "none",
 }));
 export const CurrentFieldValueWrapper = styled.span(() => ({
-  display: "flex",
   marginTop: "-16px",
+  display: "flex",
   fontSize: "13px",
   lineHeight: "15px",
   color: "#9AA3C2",

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import {
   InputWrapper,
@@ -39,3 +40,12 @@ const Input = ({ isNotTextArea, type, label, placeholder, width, input }) => {
 };
 
 export default Input;
+
+Input.propTypes = {
+  isNotTextArea: PropTypes.bool,
+  type: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  width: PropTypes.string,
+  input: PropTypes.string,
+};

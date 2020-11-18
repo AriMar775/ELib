@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { change } from "redux-form";
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import { SelectCollectionModal } from "../component";
+import SelectCollectionModal from "../component";
 import { getCollections } from "../../../../redux/selectors";
 
 const SelectCollectionModalContainer = () => {
@@ -12,14 +12,20 @@ const SelectCollectionModalContainer = () => {
 
   const collection = useSelector(getCollections);
 
-  const back = (e) => {
-    e.stopPropagation();
-    history.goBack();
-  };
+  const back = useCallback(
+    (e) => {
+      e.stopPropagation();
+      history.goBack();
+    },
+    [history]
+  );
 
-  const handleCollectionClick = (value) => {
-    dispatch(change("AddBookForm", "collection", value));
-  };
+  const handleCollectionClick = useCallback(
+    (value) => {
+      dispatch(change("AddBookForm", "collection", value));
+    },
+    [dispatch]
+  );
 
   return (
     <SelectCollectionModal
