@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, BrowserRouter, useLocation } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 
 import NotFound from "../pages/NotFound";
 import Home from "../pages/Home/container";
@@ -18,7 +18,7 @@ const Routes = () => {
   let background = location.state && location.state.background;
 
   return (
-    <BrowserRouter>
+    <>
       <Switch location={background || location}>
         <Route exact path="/home" component={Home} />
         <Route exact path="/book" component={Book} />
@@ -43,7 +43,7 @@ const Routes = () => {
           <Route path="/series-items-modal" component={SeriesItemsModal} />
         </>
       )}
-    </BrowserRouter>
+    </>
   );
 };
 
