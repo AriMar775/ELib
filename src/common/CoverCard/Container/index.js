@@ -36,7 +36,7 @@ const CoverCardContainer = ({
 export default CoverCardContainer;
 
 CoverCardContainer.propTypes = {
-  series: PropTypes.arrayOf(PropTypes.string),
+  series: PropTypes.string,
   category: PropTypes.string,
   cover: PropTypes.string,
   progressPercent: PropTypes.string,

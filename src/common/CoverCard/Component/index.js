@@ -68,8 +68,8 @@ const CoverCard = ({
 export default CoverCard;
 
 CoverCard.propTypes = {
-  location: PropTypes.string,
-  series: PropTypes.arrayOf(PropTypes.string),
+  location: PropTypes.object,
+  series: PropTypes.string,
   category: PropTypes.string,
   cover: PropTypes.string,
   progressPercent: PropTypes.string,
