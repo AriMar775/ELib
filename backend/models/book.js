@@ -3,13 +3,14 @@ const { Schema, model } = require("mongoose");
 const book = new Schema({
   //examples
   title: String,
-  title2: {
+  description: {
     type: String,
     requires: true,
   },
-  desc: {
+  pages: {
     type: Number,
     requires: true,
+    default: 155,
   },
 });
 
